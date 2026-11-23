@@ -1,0 +1,43 @@
+
+:root{--bg:#080b1a;--panel:#10162b;--card:#1b2542;--blue:#55c7ff;--blue2:#168bd2;--text:#fff;--muted:#c8d1df;--line:#314366}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+header{background:rgba(16,22,43,.97);border-bottom:1px solid #22304e;position:sticky;top:0;z-index:10}
+.nav{max-width:1200px;margin:auto;padding:15px 5%;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.35rem;letter-spacing:1px;color:var(--blue);white-space:nowrap}
+nav ul{list-style:none;display:flex;gap:15px;flex-wrap:wrap;align-items:center}
+nav a{color:#fff;font-size:.94rem}nav a.active,nav a:hover{color:var(--blue)}
+.nav-actions{display:flex;gap:10px;align-items:center}
+.btn,button{display:inline-block;border:0;border-radius:25px;padding:11px 19px;background:var(--blue2);color:white;font-weight:700;cursor:pointer}
+.btn:hover,button:hover{background:var(--blue);color:#07101c;text-decoration:none}
+.btn.secondary{background:transparent;border:1px solid var(--blue);color:var(--blue)}
+.searchbar{display:flex;gap:8px;max-width:500px;margin:18px auto}
+input,textarea,select{background:#0d1529;border:1px solid var(--line);border-radius:9px;padding:12px;color:white;width:100%;font:inherit}
+input:focus,textarea:focus{outline:2px solid var(--blue)}
+main{min-height:75vh}
+.hero{min-height:430px;padding:85px 7%;display:grid;place-items:center;text-align:center;background:linear-gradient(90deg,rgba(3,7,19,.9),rgba(3,7,19,.42)),url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero-inner{max-width:850px}.eyebrow{color:var(--blue);font-weight:bold;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(2.3rem,6vw,4.4rem);line-height:1.08;margin:12px 0 20px}
+h2{font-size:2rem;color:var(--blue);margin-bottom:16px}h3{color:var(--blue);margin-bottom:8px}
+p{color:var(--muted);margin:8px 0 14px}
+.section{max-width:1150px;margin:auto;padding:65px 5%}
+.section.alt{max-width:none;background:var(--panel)}.section.alt>.inner{max-width:1150px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;margin-top:25px}
+.card{background:var(--card);border:1px solid #263657;border-radius:14px;overflow:hidden;transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 8px 28px #168bd244}
+.card img{width:100%;height:170px;object-fit:cover}.card-body{padding:20px}
+.tag{display:inline-block;color:var(--blue);font-size:.82rem;border:1px solid #347ca3;border-radius:30px;padding:3px 10px;margin-bottom:9px}
+.callout{background:#111e39;border-left:4px solid var(--blue);padding:18px 22px;border-radius:8px;margin:20px 0}
+.timeline{max-width:850px;margin:25px auto}.event{background:var(--card);border-left:3px solid var(--blue);padding:20px 25px;margin:18px 0;border-radius:8px}
+.form-wrap{max-width:520px;margin:55px auto;background:var(--panel);padding:30px;border:1px solid var(--line);border-radius:16px}
+.form-wrap label{display:block;margin:13px 0 5px}.form-wrap button{width:100%;margin-top:18px}
+.small{font-size:.88rem;color:#9eacc3}.result{margin-top:15px;color:var(--blue)}
+.chatbox{max-width:850px;margin:25px auto;background:var(--panel);padding:22px;border-radius:14px;border:1px solid var(--line)}
+.chatlog{height:320px;overflow:auto;background:#080f21;padding:15px;border-radius:10px;margin:15px 0}
+.message{padding:10px 13px;border-radius:10px;margin:8px 0;max-width:90%;background:var(--card);color:#eaf4ff}
+.message.user{margin-left:auto;background:#16476a}
+footer{background:#050814;text-align:center;padding:28px;color:#8c9bb2;border-top:1px solid #1b2944}
+footer a{margin:0 8px}
+@media(max-width:700px){.nav{justify-content:center}.nav nav ul{justify-content:center}.hero{min-height:390px;padding:65px 6%}.section{padding:45px 6%}.nav-actions{width:100%;justify-content:center}}
